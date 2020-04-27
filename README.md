@@ -5,12 +5,13 @@
 
 Attacker can do an blind xss attack at contact from which will be executed at admin, payload contains XHR request which will change the directory to ../attacker so that attachments will be uploaded outside the tmp folder, attacker will again fill up the contact form by uploading webshell with .phtml extention which results to RCE
 
+[Watch this quick video](https://www.youtube.com/watch?v=mJTrXnzoXII)
+
 # Shopping_site
 dummy shopping site for whitebox pentestig
 
 how I created this lab by just doing google
-
-https://www.youtube.com/watch?v=tc_GwgdVx5k
+[Click me](https://www.youtube.com/watch?v=tc_GwgdVx5k)
 
 # Motive for creating this lab
 To demonstrate how an attacker can misuse the admin's web page for unreistricted file upload by doing CSRf attack which is supported by blind stored XSS.
