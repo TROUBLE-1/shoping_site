@@ -1,4 +1,11 @@
-# shoping_site
+# Description for the vulnerablity
+- There is a contact form for the signed in users to send messages to admin. 
+- Admin has a feature to change the directory for the file upload during contact form.
+- Attachments are uploaded in tmp folder which contains .htaccess file which restricts users to access any file in it
+
+Attacker can do an blind xss attack at contact from which will be executed at admin, payload contains XHR request which will change the directory to ../attacker so that attachments will be uploaded outside the tmp folder, attacker will again fill up the contact form by uploading webshell with .phtml extention which results to RCE
+
+# Shopping_site
 dummy shopping site for whitebox pentestig
 
 how I created this lab by just doing google
@@ -11,13 +18,6 @@ To demonstrate how an attacker can misuse the admin's web page for unreistricted
 This a whitebox pentesing lab so you can also check out database for credentials or any other information.
 
 open User account in normal window and admin's account in private window.
-
-# Description for the vulnerablity
-- There is a contact form for the signed in users to send messages to admin. 
-- Admin has a feature to change the directory for the file upload during contact form.
-- Attachments are uploaded in tmp folder which contains .htaccess file which restricts users to access any file in it
-
-Attacker can do an blind xss attack at contact from which will be executed at admin, payload contains XHR request which will change the directory to ../attacker so that attachments will be uploaded outside the tmp folder, attacker will again fill up the contact form by uploading webshell with .phtml extention which results to RCE
 
 # installation
 1. Extract the file into /var/www/html
