@@ -28,11 +28,11 @@ open User account in normal window and admin's account in private window.
    mysql "shop_site" < shop_site.sql
 5. done
 
-# create mysql user
-run the following commands in mysql
+# Create mysql user
+Run the following commands in mysql
 
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON * . * TO 'newuser'@'localhost';
+GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 
 
