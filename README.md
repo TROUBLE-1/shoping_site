@@ -55,4 +55,8 @@ If you are running in windows dont edit
 
 ?>
 ```
+
+# Credentials
+Admin: trouble1/trouble1
+
 ## [Walkthrough](https://www.youtube.com/watch?v=ABm0yKG58OY)
