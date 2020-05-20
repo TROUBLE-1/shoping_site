@@ -36,6 +36,10 @@ CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON * . * TO 'user'@'localhost';
 FLUSH PRIVILEGES;
 
+# Give permissions
+```
+chmod -R 777 /var/www/html/
+```
 
 # edit config.php
 edit the username and password in config.php
